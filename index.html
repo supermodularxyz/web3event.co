@@ -5,16 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web3Event.co</title>
-	
+	<!-- twitter cards & og -->
 	<meta name="twitter:domain" content="web3event.co" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@web3eventco" />
 	<meta property="twitter:title" content="web3event.co" />
 	<meta property="twitter:description" content="coming soon.">
-	<meta name="twitter:image" content="https://web3event.co/img/logo.png" />
-	<meta property="twitter:image" content="https://web3event.co/img/logo.png" />
+	<meta name="twitter:image" content="https://web3event.co/img/w3e-card.png" />
+	<meta property="twitter:image" content="https://web3event.co/img/w3e-card.png" />
 	<meta name="twitter:image:width" content="592" />
 	<meta name="twitter:image:height" content="482" />
+
+	<meta property="og:title" content="web3event.co">
+    <meta property="og:type" content="blockchain">
+    <meta property="og:url" content="https://web3event.co/">
+    <meta property="og:image" itemprop="image" content="https://web3event.co/img/w3e-card.png">
 	<!-- icons -->
 	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -37,30 +42,35 @@
 </head>
 
 <body>
-	<div id=main class="center">
-		<img src="/img/w3e-logo.svg" alt="web3event logo" width='400'/>
-		<img src="/img/logo-wordmark.svg" alt="web3event logo" width='370'/>
-		<p class="soon">
-			<span>C</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span> 
-			<span>S</span><span>o</span><span>o</span><span>n</span>
-		</p>
-		<a href="mailto:team@web3event.co">team@web3event.co</a>
+	<div class="hero">
+		<div class="center">
+			<img src="/img/w3e-logo.svg" alt="web3event logo" width='350'/>
+			<img src="/img/logo-wordmark.svg" alt="web3event logo" width='330'/>
+			<p class="soon">
+				<span>C</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span> 
+				<span>S</span><span>o</span><span>o</span><span>n</span>
+			</p>
+			<a href="mailto:team@web3event.co">team@web3event.co</a>
+		</div>
 	</div>
 </body>
 
 <style type="text/css">
-	body {
-		background-image: url('/img/bg-texture.svg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	
-	#main {
+	html {
 		font-family: 'Suez One', serif;
 		font-style: normal;
 		font-weight: 400;
 		text-align: center;
+		box-sizing: border-box;
+	}
+
+	.hero {
+		height: 100vh;
+		position: relative;
+		background-image: url('/img/bg-texture.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.center {
@@ -71,7 +81,7 @@
 		padding: 10px;
 	}
 
-	#main a {
+	.center a {
 		font-family: 'IBM Plex Sans', sans-serif;
 		font-weight: 500;
 		font-size: 1.5rem;
@@ -82,7 +92,7 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 	}
-	#main a:hover {
+	.center a:hover {
   		color: transparent;
 	}
 
@@ -92,13 +102,15 @@
 	}
 
 	.soon {
-		font-size: 3.5rem;
+		font-size: 2rem;
 		margin-bottom: 2rem;
 		margin-top: 4rem;
 		background: linear-gradient(90deg, #B84FFF 0%, #49C0FF 38.02%, #FFE49D 64.75%, #fe650c 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		padding-block: 0.3rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
 	}
 
 	span {
