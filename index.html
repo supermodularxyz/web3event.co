@@ -1,6 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web3Event.co</title>
+	
 	<meta name="twitter:domain" content="web3event.co" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@web3eventco" />
@@ -10,33 +15,99 @@
 	<meta property="twitter:image" content="https://web3event.co/img/logo.png" />
 	<meta name="twitter:image:width" content="592" />
 	<meta name="twitter:image:height" content="482" />
-
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/site.webmanifest">
+	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="thumbnail" content="https://web3event.co/icons/w3e-thumbnail.jpg">
+	<!-- preloads -->
+	<link rel="preload" as="image" href="/img/w3e-logo.svg">
+	<link rel="preload" as="image" href="/img/logo-wordmark.svg">
+	<!-- fonts & stylesheets -->
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Suez+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<div id=main class="center">
-		<img src="/img/logo.png">
-		<p>Coming Soon</p>
-		<a href="team@web3event.co">team@web3event.co</a>
+		<img src="/img/w3e-logo.svg" alt="web3event logo" width='400'/>
+		<img src="/img/logo-wordmark.svg" alt="web3event logo" width='370'/>
+		<p class="soon">
+			<span>C</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span> 
+			<span>S</span><span>o</span><span>o</span><span>n</span>
+		</p>
+		<a href="mailto:team@web3event.co">team@web3event.co</a>
 	</div>
 </body>
 
 <style type="text/css">
-	#main {
-		 	font-family: "Miriam Libre",sans-serif;
-   			font-weight: 500;
-   			text-align: center;
+	body {
+		background-image: url('/img/bg-texture.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
-	#main a{
-		color: black;
-		font-weight: bold;
+	
+	#main {
+		font-family: 'Suez One', serif;
+		font-style: normal;
+		font-weight: 400;
+		text-align: center;
 	}
 
 	.center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 10px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 10px;
+	}
+
+	#main a {
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: black;
+		transition: color 0.4s ease-out;
+		background: linear-gradient(90deg, #B84FFF 0%, #49C0FF 38.02%, #ffdb80 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+	#main a:hover {
+  		color: transparent;
+	}
+
+	img {
+		display: block;
+		margin: 0.5rem auto;
+	}
+
+	.soon {
+		font-size: 3.5rem;
+		margin-bottom: 2rem;
+		margin-top: 4rem;
+		background: linear-gradient(90deg, #B84FFF 0%, #49C0FF 38.02%, #FFE49D 64.75%, #fe650c 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		padding-block: 0.3rem;
+	}
+
+	span {
+		color: black;
+		transition: color 0.3s ease-out;
+		cursor: default;
+	}
+	span:hover {
+		color: transparent;
 	}
 </style>
 </html>
